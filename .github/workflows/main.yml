@@ -10,12 +10,12 @@ on:
 
 
 jobs:
-bulid:
-runs-on: windows
+ bulid:
+  runs-on: windows
 steps:
 - uses: actions/checkout@v3
-- name: "login to docker hub"
-run: docker login --username${{DOCKER_USERNAME}} --password ${{DOCKER_PASSWORD}}
+-  name: "login to docker hub"
+     run: docker login --username ${{secrets.DOCKER_USERNAME}} --password ${{secrets.DOCKER_PASSWORD}}
 
 
 
