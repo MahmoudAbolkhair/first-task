@@ -1,1 +1,22 @@
+on:
+ push:
+  branch:
+   - master
+
+
+
+
+
+
+
+jobs:
+bulid:
+runs-on: windows
+uses: actions/checkout@v3
+name: "login to docker hub"
+run: docker login --username abolkhair --password dckr_pat_WQR8H1rgRebjocteSkuZaht4CCY
+
+
+
+steps:
 
